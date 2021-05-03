@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Word & Character Counter Tool, Count Easily & For Free!</title>
+    <meta name = "description" content = "The purpose of Word & Character Counter Tool is for those who needs to count words & characters for their homework & assignments purposes.It can be students,teachers,lawyers,secretaries and so on.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Saleh Imtiaz">
+    <meta name = "keywords" content = "HTML,CSS,Javascript">
+    <link rel = "shortcut icon" type = "images/ico" href="fav.png">
+    <link rel = "stylesheet" href="wordcounter.css">
+
+    
+    
+ </head>
+<body>
+    <style>
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    }
+    textarea{
+     resize:none;
+      padding:1rem;
+    }
+    .main textarea{
+    width:100%;
+    }
+    .main{
+    padding:2rem;
+    }
+    .main h2,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3rem;
+    }
+    #show{
+    background:#00a8ff;
+    width:40%;
+    font-size: 1rem;
+    height:5vh;
+    }
+    #show1{
+    background:#192a56;
+    width:40%;
+    height:5vh;
+    font-size:1rem;
+     
+    }
+    .hi{
+    display: flex;
+    justify-content: center;
+    gap:3px;
+    }
+    .boss{
+     background:url('bg1.jpg');
+     background-size:100% 100%;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position: center;
+     height:120vh;
+    }
+    .main h2{
+     font-size:2rem;
+    }
+    .main p{
+     font-size:1.5rem;
+    }
+    .main h2,p{
+     color:#ffff;
+    }
+    .text{
+     text-align: center;
+     padding:3rem;
+     font-size:1.5rem;
+    }
+    .text h5{
+        text-align:center;
+        font-size:1.5rem;
+        line-height:2rem;
+    }
+    .text h2{
+        width: 320px;
+        margin:0 auto;
+    
+    }
+    .text1{
+     text-align: center;
+     padding:2rem;
+     line-height: 2rem;
+    }
+    .main-text{
+     line-height: 2rem;
+     padding:2rem;
+     background:#c8d6e5;
+    }
+    
+    @media(min-width:868px){
+    .main textarea{
+    width:54.5%;
+    float: left;
+    margin-left:13rem;
+      
+    }
+    .main{
+    padding:2rem;
+    }
+    
+    
+    
+    .boss{
+    padding:1rem;
+    height:78vh;
+    
+    }
+    .hi{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    margin:auto;
+    padding:0 3rem;
+            
+    }
+    #show1{
+      height:10vh;
+      width:100%;
+    }
+    #show{
+      height:10vh;
+      width:100%;
+    }
+    .text h2{
+        width:740px;
+    }
+    
+    .text1{
+      text-align: center;
+    }
+    .text1 h2{
+      font-size:2rem;
+    }
+    .text2 li{
+      font-size:2rem;
+    }
+    .text2 h5{
+      font-size:1.5rem;
+      width:100%;
+    }
+     
+    .main-text{
+    column-count: 3;
+     line-height: 3.5rem;
+    padding:4rem;
+    gap:12px;
+    
+    }
+    }
+</style>
+      </body>
+    <div class = "boss">
+        <div class = "main">
+            <h2>Counting Words is Easy!</h2>
+            <p>Count Words for free</p>
+        <div class = "calculated area">
+       <textarea oninput="countwords()" cols = "55" rows="17"  id="word" placeholder = "Type/paste"></textarea>
+       </div>
+       </div>
+  <div class = "hi">
+ <p id = "show1"> Characters</p>
+<p id = "show">Words</p>
+ <!-- <button onclick = "countwords()" id="btn">Count Words</button> -->
+     </div>
+     </div>
+
+     <div class = "text">
+    <h2>Why would you need a word counting tool?</h2><br>
+    <h5>Online Word Counters are perfect for those who want to keep a count of words and characters. It is a great way to count your words easily. In this counting tool,you don't need to click on traditional button. Simply copy and paste the text!</h5>
+    </div>
+     </div>
+      <div class = "text1">
+        <h2>Whom is this word counting tool for?</h2>
+        </div>
+        <div class = "main-text">
+
+        <div class = "text2">
+        <p><li>Teachers and Students</li></p>
+          <h5>As a student you will be expected to need a word counting tool for homework or assignments. As a lecturer, you can use this tool to ensure your students’ assignments are the correct length. </h5>
+           <p><li>Bloggers or Content Writers</p></li>
+         <h5>Counting words are important if you are writing an article or content for someone. For SEO, the ideal blog post length should be 2,100-2,400 words.</h5>
+        <p><li>Other Uses</p></li>
+        <h5>In many work places,you will be expected to write pieces of certain lengths at times.For example:lawyers,secretaries etc.</h5>
+</div>
+ </div>
+     
+      <script src = "javascript.js"></script>
+</body>
+</html>
